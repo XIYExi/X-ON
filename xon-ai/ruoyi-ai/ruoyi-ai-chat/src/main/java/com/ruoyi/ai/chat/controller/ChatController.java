@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ChatController {
 
     private final OpenAiChatModel openAiChatModel;
-    
+
     @Anonymous
     @GetMapping("/v1/chat")
     public String chat(@RequestParam(value = "msg") String msg) {
