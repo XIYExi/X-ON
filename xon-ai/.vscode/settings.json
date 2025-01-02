@@ -1,0 +1,40 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "disabled",
+    "maven.view": "hierarchical",
+    "maven.executable.options": "-T 4",
+    "maven.pomfile.autoUpdateEffectivePOM": true,
+    "java.debug.settings.hotCodeReplace": "auto",
+    "spring-boot.ls.java.home": "",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=9 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms4G -Xlog:disable",
+    "maven.excludedFolders": [
+        "**/.vscode",
+        "**/.idea",
+        "**/target",
+        "**/.*",
+        "**/node_modules",
+        "**/target",
+        "**/bin",
+        "**/archetype-resources"
+    ],
+    "boot-java.rewrite.refactorings.on": true,
+    "maven.executable.preferMavenWrapper": true,
+    "java.import.maven.enabled": true,
+    "java.dependency.packagePresentation": "hierarchical",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "localhost",
+            "database": "ry",
+            "username": "root",
+            "password": "123456"
+        }
+    ],
+}

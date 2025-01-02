@@ -1,0 +1,26 @@
+pay:
+  sqb:
+    enabled: false
+    appId: "appId"
+    apiDomain: "apiDomain"
+    terminalSn: "terminalSn"
+    terminalKey: "terminalKey"
+    vendorSn: "vendorSn"
+    vendorKey: "vendorKey"
+  alipay:
+    enabled: false
+    appId: appid
+    # 应用私钥
+    appPrivateKey: classpath:pay/alipay/alipay_private_key.pem
+    # 支付宝公钥
+    alipayPublicKey: classpath:pay/alipay/alipay_public_key.pem
+    notifyUrl: http://e2vca6.natappfree.cc/alipay/notify
+  wechat:
+    enabled: false
+    appId: appid
+    apiV3Key: apiV3Key
+    privateKeyPath: classpath:pay/wx/apiclient_key.pem
+    merchantId: merchantId
+    merchantSerialNumber: merchantSerialNumber
+    # 回调地址，此处使用的内网穿透http://e2vca6.natappfree.cc
+    notifyUrl: http://e2vca6.natappfree.cc/pay/wechat/notify

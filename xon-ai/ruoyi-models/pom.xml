@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ruoyi</artifactId>
+        <groupId>com.ruoyi</groupId>
+        <version>3.8.8.3.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ruoyi-models</artifactId>
+
+    <properties>
+        <ruoyi.version>3.8.8.3.1</ruoyi.version>
+    </properties>
+
+    <description>
+        中间件
+    </description>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 定时任务-->
+            <dependency>
+                <groupId>com.ruoyi</groupId>
+                <artifactId>ruoyi-quartz</artifactId>
+                <version>${ruoyi.version}</version>
+            </dependency>
+
+            <!-- 代码生成-->
+            <dependency>
+                <groupId>com.ruoyi</groupId>
+                <artifactId>ruoyi-generator</artifactId>
+                <version>${ruoyi.version}</version>
+            </dependency>
+
+            <!-- 代码生成-->
+            <dependency>
+                <groupId>com.ruoyi</groupId>
+                <artifactId>ruoyi-online</artifactId>
+                <version>${ruoyi.version}</version>
+            </dependency>
+
+            <!-- 代码生成-->
+            <dependency>
+                <groupId>com.ruoyi</groupId>
+                <artifactId>ruoyi-models-starter</artifactId>
+                <version>${ruoyi.version}</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
+    <modules>
+        <module>ruoyi-models-starter</module>
+        <module>ruoyi-generator</module>
+        <module>ruoyi-quartz</module>
+        <module>ruoyi-online</module>
+    </modules>
+    <packaging>pom</packaging>
+</project>
